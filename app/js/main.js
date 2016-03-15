@@ -14,14 +14,16 @@ angular
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/login.html',
-        controller: 'loginController',
-        controllerAs: 'login'
+        templateUrl: 'views/home.html'
       })
-      .when('/profil', {
-        templateUrl: 'views/profil.html',
-        controller: 'profilController',
-        controllerAs: 'profil'
+      .when('/client', {
+        templateUrl: 'views/client.html'
+      })
+      .when('/contrat', {
+        templateUrl: 'views/contrat.html'
+      })
+      .when('/nouveau-client', {
+        templateUrl: 'views/nouveau-client.html'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,0 +1,152 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+
+      <h1>Saisie des commandes</h1>
+
+      <form class="form-inline form-search">
+        <div class="form-group">
+          <label for="form-client">N° client / séquence</label>
+          <input type="text" class="form-control" id="form-client" placeholder="123456" size="6" maxlength="6" />
+          <input type="text" class="form-control" placeholder="12" size="2" maxlength="2" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-dossier">N° dossier</label>
+          <input type="text" class="form-control" id="form-dossier" placeholder="123456" size="6" maxlength="6" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-facture">N° facture</label>
+          <input type="text" class="form-control" id="form-facture" placeholder="123456" size="6" maxlength="6" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-enseigne">Enseigne</label>
+          <select class="form-control" id="form-enseigne">
+            <option>Toutes</option>
+            <option>Enseigne 1</option>
+            <option>Enseigne 2</option>
+            <option>Enseigne 3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="form-nom">Nom</label>
+          <input type="text" class="form-control" id="form-nom" placeholder="Rousseau" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-code">Code Postal</label>
+          <input type="text" class="form-control" id="form-code" placeholder="92240" size="6" maxlength="6" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-location">Localité</label>
+          <input type="text" class="form-control" id="form-location" placeholder="Malakoff" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-email">Email</label>
+          <input type="email" class="form-control" id="form-email" placeholder="Malakoff" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <span class="glyphicon glyphicon-search"></span>
+          Rechercher
+        </button>
+
+        <button type="submit" class="btn btn-primary">
+          Annuler
+        </button>
+      </form>
+
+      <h3>62 résultats pour votre recherche</h3>
+      <p>
+        
+        <a href="#/nouveau-client" class="btn btn-default pull-right">
+          <span class="glyphicon glyphicon-plus"></span>
+          Nouveau client
+        </a>
+      </p>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Adresse</th>
+            <th>Code Postal</th>
+            <th>Localité</th>
+            <th>Email</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rousseau</td>
+            <td>Gustave</td>
+            <td>23 rue Jean Bleuze</td>
+            <td>77150</td>
+            <td>LESIGNY</td>
+            <td>g.rousseau@yahoo.fr</td>
+            <td>
+              <a href="#/client" class="btn btn-default">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Rousseau</td>
+            <td>Alphonse</td>
+            <td>16 rue de Sèze</td>
+            <td>69004</td>
+            <td>LYON</td>
+            <td></td>
+            <td>
+              <a href="#/client" class="btn btn-default">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Rousseau</td>
+            <td>Emma</td>
+            <td>13 rue de Wattignies</td>
+            <td>75012</td>
+            <td>PARIS</td>
+            <td>emma7588@orange.fr</td>
+            <td>
+              <a href="#/client" class="btn btn-default">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <nav>
+        <center>
+          <ul class="pagination">
+            <li>
+              <a href="#/" aria-label="Précédent">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#/">1</a></li>
+            <li><a href="#/">2</a></li>
+            <li><a href="#/">3</a></li>
+            <li><a href="#/">4</a></li>
+            <li>
+              <a href="#" aria-label="Suivant">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </center>
+      </nav>
+
+    </div>
+  </div>
+</div>
