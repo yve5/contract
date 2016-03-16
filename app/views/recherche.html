@@ -1,9 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-
+      
       <h1>Saisie des commandes</h1>
-
 
       <form class="form-horizontal">
         <div class="row">
@@ -84,35 +83,38 @@
 
             <div class="form-group">
               <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2">
-                <button type="submit" class="btn btn-info">
+                <a href="#/recherche" class="btn btn-info">
                   <span class="glyphicon glyphicon-search"></span>
                   Rechercher
-                </button>
+                </a>
+                
+<!--                <button type="submit" class="btn btn-info">
+                  <span class="glyphicon glyphicon-search"></span>
+                  Rechercher
+                </button>-->
               </div>
             </div>
 
             <div class="form-group">
               <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2">
-                <button type="submit" class="btn btn-info">
-                  <span class="glyphicon glyphicon-remove"></span>
-                  Annuler
-                </button>
+                <a href="#/recherche" class="btn btn-info">
+                  <span class="glyphicon glyphicon-refresh"></span>
+                  Rafraîchir
+                </a>
+                
+<!--                <button type="reset" class="btn btn-info">
+                  <span class="glyphicon glyphicon-refresh"></span>
+                  Rafraîchir
+                </button>-->
               </div>
             </div>
           </div>
         </div>
       </form>
 
-      
-      <center>
-        <a href="#/nouveau-client" class="btn btn-info buffer-bottom">
-          <span class="glyphicon glyphicon-plus"></span>
-          Nouveau client
-        </a>
-      </center>
-      
-      
-      <h3>62 résultats pour votre recherche</h3>
+      <hr />
+
+      <h3>42 résultats pour votre recherche</h3>
 
       <table class="table table-striped">
         <thead>
@@ -190,6 +192,13 @@
         </center>
       </nav>
 
+      <p class="text-center">
+        <a href="#/nouveau-client" class="btn btn-default buffer-bottom">
+          <span class="glyphicon glyphicon-plus"></span>
+          Nouveau client
+        </a>
+      </p>
+      
     </div>
   </div>
 </div>
