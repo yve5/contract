@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Trebuchet MS', sans-serif;
+  background-color: #f5f5f5;
 }
 
 .buffer-top {
@@ -14,7 +15,6 @@ body {
 
 div.container-header {
   background-color: #00bcd4;
-  /*@include background-image(linear-gradient(0deg, #00acc1, #00bcd4));*/
   @include background-image(linear-gradient(0deg, #00bcd4, #26c6da));
   padding-bottom: 20px;
   padding-top: 20px;
@@ -22,4 +22,8 @@ div.container-header {
   .app-logo {
     width: 170px;
   }
+}
+
+.panel-solde {
+  background-color: #B2EBF2;
 }

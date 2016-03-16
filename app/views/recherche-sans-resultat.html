@@ -1,118 +1,122 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-      
+
       <h1>Saisie des commandes</h1>
 
-      <form class="form-horizontal">
-        <div class="row">
-          <div class="col-sm-5">
-            <div class="form-group">
-              <label for="form-client" class="col-xs-4 col-md-4 control-label">N° Client</label>
-              <div class="col-xs-8 col-md-8">
-                <input type="text" class="form-control" id="form-client" placeholder="123456" size="6" maxlength="6" />
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+          <form class="form-horizontal">
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="form-group">
+                  <label for="form-client" class="col-xs-4 col-md-4 control-label">N° Client</label>
+                  <div class="col-xs-8 col-md-8">
+                    <input type="text" class="form-control" id="form-client" placeholder="123456" size="6" maxlength="6" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-nom" class="col-xs-4 col-md-4 control-label">Nom</label>
+                  <div class="col-xs-8 col-md-8">
+                    <input type="text" class="form-control" id="form-nom" placeholder="Rousseau" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-location" class="col-xs-4 col-md-4 control-label">Localité</label>
+                  <div class="col-xs-8 col-md-8">
+                    <input type="text" class="form-control" id="form-location" placeholder="Malakoff" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="col-xs-4 col-md-4 control-label">Email</label>
+                  <div class="col-xs-8 col-md-8">
+                    <input type="email" class="form-control" id="form-email" placeholder="michel.dupont@gmail.com" />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="form-sequence" class="col-xs-4 col-md-6 control-label">N° Séquence</label>
+                  <div class="col-xs-8 col-md-6">
+                    <input type="text" class="form-control" id="form-sequence" placeholder="12" size="2" maxlength="2" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-dossier" class="col-xs-4 col-md-6 control-label">N° Dossier</label>
+                  <div class="col-xs-8 col-md-6">
+                    <input type="text" class="form-control" id="form-dossier" placeholder="123456" size="6" maxlength="6" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-enseigne" class="col-xs-4 col-md-6 control-label">Enseigne</label>
+                  <div class="col-xs-8 col-md-6">
+                    <select class="form-control" id="form-enseigne">
+                      <option>Toutes</option>
+                      <option>Enseigne 1</option>
+                      <option>Enseigne 2</option>
+                      <option>Enseigne 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-3">
+                <div class="form-group">
+                  <label for="form-facture" class="col-xs-4 col-md-6 control-label">N° Facture</label>
+                  <div class="col-xs-8 col-md-6">
+                    <input type="text" class="form-control" id="form-facture" placeholder="123456" size="6" maxlength="6" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-code" class="col-xs-4 col-md-6 control-label">Code Postal</label>
+                  <div class="col-xs-8 col-md-6">
+                    <input type="text" class="form-control" id="form-code" placeholder="92240" size="6" maxlength="6" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2">
+                    <a href="#/recherche" class="btn btn-info">
+                      <span class="glyphicon glyphicon-search"></span>
+                      <span class="hidden-sm">Rechercher</span>
+                    </a>
+
+                    <!--<button type="submit" class="btn btn-info">
+                      <span class="glyphicon glyphicon-search"></span>
+                      <span class="hidden-sm">Rechercher</span>
+                    </button>-->
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2">
+                    <a href="#/recherche-sans-resultat" class="btn btn-info">
+                      <span class="glyphicon glyphicon-refresh"></span>
+                      <span class="hidden-sm">Rafraîchir</span>
+                    </a>
+
+                    <!--<button type="reset" class="btn btn-info">
+                      <span class="glyphicon glyphicon-refresh"></span>
+                      <span class="hidden-sm">Rafraîchir</span>
+                    </button>-->
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="form-group">
-              <label for="form-nom" class="col-xs-4 col-md-4 control-label">Nom</label>
-              <div class="col-xs-8 col-md-8">
-                <input type="text" class="form-control" id="form-nom" placeholder="Rousseau" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="form-location" class="col-xs-4 col-md-4 control-label">Localité</label>
-              <div class="col-xs-8 col-md-8">
-                <input type="text" class="form-control" id="form-location" placeholder="Malakoff" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="form-email" class="col-xs-4 col-md-4 control-label">Email</label>
-              <div class="col-xs-8 col-md-8">
-                <input type="email" class="form-control" id="form-email" placeholder="michel.dupont@gmail.com" />
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-sm-4">
-            <div class="form-group">
-              <label for="form-sequence" class="col-xs-4 col-md-6 control-label">N° Séquence</label>
-              <div class="col-xs-8 col-md-6">
-                <input type="text" class="form-control" id="form-sequence" placeholder="12" size="2" maxlength="2" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="form-dossier" class="col-xs-4 col-md-6 control-label">N° Dossier</label>
-              <div class="col-xs-8 col-md-6">
-                <input type="text" class="form-control" id="form-dossier" placeholder="123456" size="6" maxlength="6" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="form-enseigne" class="col-xs-4 col-md-6 control-label">Enseigne</label>
-              <div class="col-xs-8 col-md-6">
-                <select class="form-control" id="form-enseigne">
-                  <option>Toutes</option>
-                  <option>Enseigne 1</option>
-                  <option>Enseigne 2</option>
-                  <option>Enseigne 3</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-sm-3">
-            <div class="form-group">
-              <label for="form-facture" class="col-xs-4 col-md-6 control-label">N° Facture</label>
-              <div class="col-xs-8 col-md-6">
-                <input type="text" class="form-control" id="form-facture" placeholder="123456" size="6" maxlength="6" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="form-code" class="col-xs-4 col-md-6 control-label">Code Postal</label>
-              <div class="col-xs-8 col-md-6">
-                <input type="text" class="form-control" id="form-code" placeholder="92240" size="6" maxlength="6" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2">
-                <a href="#/recherche" class="btn btn-info">
-                  <span class="glyphicon glyphicon-search"></span>
-                  Rechercher
-                </a>
-                
-<!--                <button type="submit" class="btn btn-info">
-                  <span class="glyphicon glyphicon-search"></span>
-                  Rechercher
-                </button>-->
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-xs-8 col-xs-offset-4 col-sm-10 col-sm-offset-2">
-                <a href="#/recherche" class="btn btn-info">
-                  <span class="glyphicon glyphicon-refresh"></span>
-                  Rafraîchir
-                </a>
-                
-<!--                <button type="reset" class="btn btn-info">
-                  <span class="glyphicon glyphicon-refresh"></span>
-                  Rafraîchir
-                </button>-->
-              </div>
-            </div>
-          </div>
+          </form>
+          
         </div>
-      </form>
-
-      <hr />
+      </div>
 
       <p class="text-center">
         <a href="#/nouveau-client" class="btn btn-default buffer-bottom">
@@ -120,7 +124,7 @@
           Nouveau client
         </a>
       </p>
-      
+
     </div>
   </div>
 </div>
