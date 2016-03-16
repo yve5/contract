@@ -5,7 +5,7 @@
       <h1>Client</h1>
 
       <div class="panel panel-default">
-        <div class="panel-body">
+        <div class="panel-body grey bright-4">
 
           <div class="row">
             <div class="col-sm-6">
@@ -48,14 +48,14 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Ens.</th>
+            <th class="hidden-xs">Ens.</th>
             <th>Client</th>
-            <th>Séq.</th>
-            <th>Club</th>
-            <th>Libelé</th>
-            <th>Support</th>
-            <th>Adhés.</th>
-            <th>Niv.</th>
+            <th class="hidden-xs">Séq.</th>
+            <th class="hidden-xs">Club</th>
+            <th class="hidden-xs hidden-sm">Libellé</th>
+            <th class="hidden-xs">Support</th>
+            <th class="hidden-xs">Adhés.</th>
+            <th class="hidden-xs">Niv.</th>
             <th>Solde</th>
             <th></th>
             <th></th>
@@ -64,73 +64,95 @@
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
+            <td class="hidden-xs">1</td>
             <td>20236252</td>
-            <td>001</td>
-            <td>34711</td>
-            <td>Disney Club</td>
-            <td>B3452</td>
-            <td>02/15</td>
-            <td>4</td>
-            <td>-32,40</td>
+            <td class="hidden-xs">001</td>
+            <td class="hidden-xs">34711</td>
+            <td class="hidden-xs hidden-sm">Disney Club</td>
+            <td class="hidden-xs">B3452</td>
+            <td class="hidden-xs">02/15</td>
+            <td class="hidden-xs">4</td>
+            <td>-32,40&nbsp;&euro;</td>
             <td>
-              <a href="#/contrat">Factures</a>
+              <a href="#/contrat">
+                <span class="hidden-xs hidden-sm">Factures</span>
+                <span class="visible-xs visible-sm">Fact.</span>
+              </a>
             </td>
             <td>
-              <a href="#/client">Prélèvement</a>
+              <a href="#/client">
+                <span class="hidden-xs hidden-sm">Prélèvement</span>
+                <span class="visible-xs visible-sm">Prél.</span>
+              </a>
             </td>
             <td>
-              <a href="#/client">Paiement Solde</a>
+              <a href="#/client">
+                <a href="#/client">
+                <span class="hidden-xs hidden-sm">Paiement Solde</span>
+                <span class="visible-xs visible-sm">Solde</span>
+              </a>
             </td>
           </tr>
           <tr>
-            <td>2</td>
+            <td class="hidden-xs">2</td>
             <td>30262512</td>
-            <td>002</td>
-            <td>22211</td>
-            <td>Marvel</td>
-            <td>8888</td>
-            <td>06/14</td>
-            <td>12</td>
-            <td>0</td>
+            <td class="hidden-xs">002</td>
+            <td class="hidden-xs">22211</td>
+            <td class="hidden-xs hidden-sm">Marvel</td>
+            <td class="hidden-xs">8888</td>
+            <td class="hidden-xs">06/14</td>
+            <td class="hidden-xs">12</td>
+            <td>0&nbsp;&euro;</td>
             <td>
-              <a href="#/contrat">Factures</a>
+              <a href="#/contrat">
+                <span class="hidden-xs hidden-sm">Factures</span>
+                <span class="visible-xs visible-sm">Fact.</span>
+              </a>
             </td>
             <td>
-              <a href="#/client">Prélèvement</a>
+              <a href="#/client">
+                <span class="hidden-xs hidden-sm">Prélèvement</span>
+                <span class="visible-xs visible-sm">Prél.</span>
+              </a>
             </td>
             <td></td>
           </tr>
           <tr>
-            <td>2</td>
+            <td class="hidden-xs">2</td>
             <td>30262512</td>
-            <td>003</td>
-            <td>22248</td>
-            <td>Marvel</td>
-            <td>3333</td>
-            <td>08/14</td>
-            <td>1</td>
-            <td>0</td>
+            <td class="hidden-xs">003</td>
+            <td class="hidden-xs">22248</td>
+            <td class="hidden-xs hidden-sm">Marvel</td>
+            <td class="hidden-xs">3333</td>
+            <td class="hidden-xs">08/14</td>
+            <td class="hidden-xs">1</td>
+            <td>0&nbsp;&euro;</td>
             <td>
-              <a href="#/contrat">Factures</a>
+              <a href="#/contrat">
+                <span class="hidden-xs hidden-sm">Factures</span>
+                <span class="visible-xs visible-sm">Fact.</span>
+              </a>
             </td>
             <td>
-              <a href="#/client">Prélèvement</a>
+              <a href="#/client">
+                <span class="hidden-xs hidden-sm">Prélèvement</span>
+                <span class="visible-xs visible-sm">Prél.</span>
+              </a>
             </td>
             <td></td>
           </tr>
         </tbody>
       </table>
 
-      <p>
-        <a href="#/" class="btn btn-default">
+      <p class="text-center">
+        <a href="#/recherche" class="btn btn-default">
           <span class="glyphicon glyphicon-chevron-left"></span>
-          Retour Sélection
+          <span class="hidden-xs">Retour Sélection</span>
         </a>
 
-        <a href="#/client" class="btn btn-default">
+        <a href="#/client" class="btn btn-info">
           <span class="glyphicon glyphicon-plus"></span>
-          Nouveau Contrat
+          <span class="hidden-xs">Nouveau Contrat</span>
         </a>
       </p>
 

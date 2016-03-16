@@ -16,6 +16,12 @@ angular
       .when('/', {
         templateUrl: 'views/home.html'
       })
+      .when('/recherche', {
+        templateUrl: 'views/recherche.html'
+      })
+      .when('/recherche-sans-resultat', {
+        templateUrl: 'views/recherche-sans-resultat.html'
+      })
       .when('/client', {
         templateUrl: 'views/client.html'
       })

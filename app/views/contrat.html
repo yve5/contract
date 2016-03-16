@@ -4,7 +4,7 @@
 
       <h1>Client</h1>
 
-      <div class="panel panel-default">
+      <div class="panel panel-default grey bright-4">
         <div class="panel-body">
 
           <div class="row">
@@ -42,9 +42,9 @@
 
         </div>
       </div>
-      
-      
-      <div class="panel panel-info">
+
+
+      <div class="panel panel-info cyan bright-4">
         <div class="panel-body">
 
           <div class="row">
@@ -58,7 +58,7 @@
 
           <div class="row">
             <div class="col-sm-6">
-              Solde : -32,40
+              Solde : -32,40 &euro;
             </div>
             <div class="col-sm-6">
               Dernier Envoi : 10/09/2015
@@ -77,37 +77,58 @@
             <th>Date Facture</th>
             <th>Niv. Envoi</th>
             <th>Montant</th>
-            <th>Solde</th>
-            <th>Paiement</th>
+            <th class="hidden-xs">Solde</th>
+            <th>
+              <span class="hidden-xs">Paiement</span>
+              <span class="visible-xs">Paie.</span>
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1023365223</td>
-            <td>10/09/2015</td>
+            <td>
+              <span class="hidden-xs">1023365223</span>
+              <span class="visible-xs">10233 65223</span>
+            </td>
+            <td>
+              <span class="hidden-xs">10/09/2015</span>
+              <span class="visible-xs">10 / 09 / 15</span>
+            </td>
             <td>4</td>
-            <td>12,90</td>
-            <td>-12,90</td>
+            <td>12,90 &euro;</td>
+            <td class="hidden-xs">-12,90 &euro;</td>
             <td>
               <input type="checkbox" name="check-facture-1"/>
             </td>
           </tr>
           <tr>
-            <td>1001251252</td>
-            <td>08/08/2015</td>
+            <td>
+              <span class="hidden-xs">1001251252</span>
+              <span class="visible-xs">10012 51252</span>
+            </td>
+            <td>
+              <span class="hidden-xs">08/08/2015</span>
+              <span class="visible-xs">08 / 08 / 15</span>
+            </td>
             <td>3</td>
-            <td>12,90</td>
-            <td>-12,90</td>
+            <td>12,90 &euro;</td>
+            <td class="hidden-xs">-12,90 &euro;</td>
             <td>
               <input type="checkbox" name="check-facture-1"/>
             </td>
           </tr>
           <tr>
-            <td>1023365223</td>
-            <td>07/07/2015</td>
+            <td>
+              <span class="hidden-xs">1023365223</span>
+              <span class="visible-xs">10233 65223</span>
+            </td>
+            <td>
+              <span class="hidden-xs">07/07/2015</span>
+              <span class="visible-xs">07 / 07 / 15</span>
+            </td>
             <td>2</td>
-            <td>12,90</td>
-            <td>-6,60</td>
+            <td>12,90 &euro;</td>
+            <td class="hidden-xs">-6,60 &euro;</td>
             <td>
               <input type="checkbox" name="check-facture-1"/>
             </td>
@@ -115,20 +136,20 @@
         </tbody>
       </table>
 
-      <p>
+      <p class="text-center">
         <a href="#/client" class="btn btn-default">
           <span class="glyphicon glyphicon-chevron-left"></span>
-          Retour
+          <span class="hidden-xs">Retour</span>
         </a>
-        
-        <a href="#/contrat" class="btn btn-default">
+
+        <a href="#/contrat" class="btn btn-success">
           <span class="glyphicon glyphicon-usd"></span>
-          Paiement
+          <span class="hidden-xs">Paiement</span>
         </a>
-        
-        <a href="#/contrat" class="btn btn-default">
+
+        <a href="#/contrat" class="btn btn-warning">
           <span class="glyphicon glyphicon-credit-card"></span>
-          Prélèvement
+          <span class="hidden-xs">Prélèvement</span>
         </a>
       </p>
 
