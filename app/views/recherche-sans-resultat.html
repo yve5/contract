@@ -9,56 +9,47 @@
 
           <form class="form-horizontal">
             <div class="row">
-              <div class="col-sm-5">
+              <div class="col-md-5">
                 <div class="form-group">
-                  <label for="form-client" class="col-xs-4 col-md-4 control-label">N° Client</label>
-                  <div class="col-xs-8 col-md-8">
-                    <input type="text" class="form-control" id="form-client" placeholder="123456" size="6" maxlength="6" />
+                  <label for="form-client" class="col-xs-4 col-md-5 control-label">N° Client / Séq.</label>
+
+                  <div class="col-xs-8 col-sm-5 col-md-7 col-md-4">
+                    <input type="text" class="form-control" id="form-client" placeholder="1234567890" maxlength="10" tabindex="1" autofocus=""/>
+                  </div>
+
+                  <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0">
+                    <input type="text" class="form-control" id="form-sequence" placeholder="123" maxlength="3" tabindex="2" />
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-nom" class="col-xs-4 col-md-4 control-label">Nom</label>
-                  <div class="col-xs-8 col-md-8">
-                    <input type="text" class="form-control" id="form-nom" placeholder="Rousseau" />
+                  <label for="form-nom" class="col-xs-4 col-md-5 control-label">Nom</label>
+                  <div class="col-xs-8 col-md-7">
+                    <input type="text" class="form-control" id="form-nom" placeholder="Rousseau" tabindex="5" />
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-location" class="col-xs-4 col-md-4 control-label">Localité</label>
-                  <div class="col-xs-8 col-md-8">
-                    <input type="text" class="form-control" id="form-location" placeholder="Malakoff" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="form-email" class="col-xs-4 col-md-4 control-label">Email</label>
-                  <div class="col-xs-8 col-md-8">
-                    <input type="email" class="form-control" id="form-email" placeholder="michel.dupont@gmail.com" />
+                  <label for="form-email" class="col-xs-4 col-md-5 control-label">Email</label>
+                  <div class="col-xs-8 col-md-7">
+                    <input type="email" class="form-control" id="form-email" placeholder="michel.dupont@gmail.com" tabindex="8" />
                   </div>
                 </div>
               </div>
 
 
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label for="form-sequence" class="col-xs-4 col-md-6 control-label">N° Séquence</label>
-                  <div class="col-xs-8 col-md-6">
-                    <input type="text" class="form-control" id="form-sequence" placeholder="12" size="2" maxlength="2" />
+                  <label for="form-dossier" class="col-xs-4 col-md-5 control-label">N° Dossier</label>
+                  <div class="col-xs-8 col-md-7">
+                    <input type="text" class="form-control" id="form-dossier" placeholder="123456" maxlength="6" tabindex="3" />
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-dossier" class="col-xs-4 col-md-6 control-label">N° Dossier</label>
-                  <div class="col-xs-8 col-md-6">
-                    <input type="text" class="form-control" id="form-dossier" placeholder="123456" size="6" maxlength="6" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="form-enseigne" class="col-xs-4 col-md-6 control-label">Enseigne</label>
-                  <div class="col-xs-8 col-md-6">
-                    <select class="form-control" id="form-enseigne">
+                  <label for="form-enseigne" class="col-xs-4 col-md-5 control-label">Enseigne</label>
+                  <div class="col-xs-8 col-md-7">
+                    <select class="form-control" id="form-enseigne" tabindex="6">
                       <option>Toutes</option>
                       <option>Enseigne 1</option>
                       <option>Enseigne 2</option>
@@ -66,55 +57,55 @@
                     </select>
                   </div>
                 </div>
+
+                <div class="form-group">
+                  <label for="form-location" class="col-xs-4 col-md-5 control-label">Localité</label>
+                  <div class="col-xs-8 col-md-7">
+                    <input type="text" class="form-control" id="form-location" placeholder="Malakoff" tabindex="9" />
+                  </div>
+                </div>
               </div>
 
-
-              <div class="col-sm-3">
+              <div class="col-md-3">
                 <div class="form-group">
-                  <label for="form-facture" class="col-xs-4 col-md-6 control-label">N° Facture</label>
-                  <div class="col-xs-8 col-md-6">
-                    <input type="text" class="form-control" id="form-facture" placeholder="123456" size="6" maxlength="6" />
+                  <label for="form-facture" class="col-xs-4 col-md-5 control-label">N° Facture</label>
+                  <div class="col-xs-8 col-md-7">
+                    <input type="text" class="form-control" id="form-facture" placeholder="123456" maxlength="6" tabindex="4" />
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="form-code" class="col-xs-4 col-md-6 control-label">Code Postal</label>
-                  <div class="col-xs-8 col-md-6">
-                    <input type="text" class="form-control" id="form-code" placeholder="92240" size="6" maxlength="6" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <div class="col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-2">
-                    <a href="#/recherche" class="btn btn-info">
-                      <span class="glyphicon glyphicon-search"></span>
-                      Rechercher
-                    </a>
-
-                    <!--<button type="submit" class="btn btn-info">
-                      <span class="glyphicon glyphicon-search"></span>
-                      <span class="hidden-sm">Rechercher</span>
-                    </button>-->
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <div class="col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-2">
-                    <a href="#/recherche-sans-resultat" class="btn btn-info">
-                      <span class="glyphicon glyphicon-refresh"></span>
-                      Rafraîchir
-                    </a>
-
-                    <!--<button type="reset" class="btn btn-info">
-                      <span class="glyphicon glyphicon-refresh"></span>
-                      <span class="hidden-sm">Rafraîchir</span>
-                    </button>-->
+                  <label for="form-code" class="col-xs-4 col-md-5 control-label">Code Postal</label>
+                  <div class="col-xs-8 col-md-7">
+                    <input type="text" class="form-control" id="form-code" placeholder="92240" maxlength="6" tabindex="7" />
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="row text-center">
+              <a href="#/recherche" class="btn btn-info" tabindex="10">
+                <span class="glyphicon glyphicon-search"></span>
+                <span class="hidden-xs">Rechercher</span>
+              </a>
+
+              <!--<button type="submit" class="btn btn-info">
+                <span class="glyphicon glyphicon-search"></span>
+                <span class="hidden-sm">Rechercher</span>
+              </button>-->
+
+              <a href="#/recherche-sans-resultat" class="btn btn-info" tabindex="11">
+                <span class="glyphicon glyphicon-refresh"></span>
+                <span class="hidden-xs">Rafraîchir</span>
+              </a>
+
+              <!--<button type="reset" class="btn btn-info">
+                <span class="glyphicon glyphicon-refresh"></span>
+                <span class="hidden-sm">Rafraîchir</span>
+              </button>-->
+            </div>
           </form>
-          
+
         </div>
       </div>
 
