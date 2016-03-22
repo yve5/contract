@@ -1,0 +1,287 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+
+      <h1>Nouveau contrat</h1>
+
+      <form class="form-horizontal">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-enseigne" class="col-sm-6 control-label">Enseigne</label>
+              <div class="col-sm-6">
+                <select id="form-enseigne" class="form-control">
+                  <option>Enseigne 1</option>
+                  <option>Enseigne 2</option>
+                  <option>Enseigne 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-club" class="col-sm-6 control-label">Club</label>
+              <div class="col-sm-6">
+                <select id="form-club" class="form-control">
+                  <option>Club 1</option>
+                  <option>Club 2</option>
+                  <option>Club 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-montant-1" class="col-sm-6 control-label">
+                Montant commande 
+                <span class="badge hidden-xs hidden-sm" title="Montant du paiement à la commande">?</span>
+              </label>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="form-montant-1" placeholder="42,00">
+                  <div class="input-group-addon">&euro;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-type-1" class="col-sm-6 control-label">Type paiement</label>
+              <div class="col-sm-6">
+                <select id="form-type-1" class="form-control">
+                  <option>Carte Bancaire</option>
+                  <option>Virement</option>
+                  <option>Chèque</option>
+                  <option>Mandat</option>
+                  <option>Web</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-montant-frais" class="col-sm-6 control-label">
+                Montant frais 
+                <span class="badge hidden-xs hidden-sm" title="Montant des frais (sans calcul automatique en fonction du nombre d'articles)">?</span>
+              </label>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="form-montant-frais" placeholder="42,00">
+                  <div class="input-group-addon">&euro;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-montant-total" class="col-sm-6 control-label">
+                Montant total 
+                <span class="badge hidden-xs hidden-sm" title="Montant total de la commande pour un One Shot de type 'Kiosque'">?</span>
+              </label>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="form-montant-total" placeholder="42,00">
+                  <div class="input-group-addon">&euro;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-echeance" class="col-sm-6 control-label">Nombre échéances</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-echeance" placeholder="6">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-beg" class="col-sm-6 control-label">
+                Top BEG <span class="badge hidden-xs hidden-sm" title="Top BEG (signé ou non signé)">?</span>
+              </label>
+              <div class="col-sm-6">
+                <label class="radio-inline">
+                  <input type="radio" name="form-beg" id="form-beg" value="0" checked="">
+                  Oui
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="form-beg" value="1">
+                  Non
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-num-envoi" class="col-sm-6 control-label">Numéro envoi</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-num-envoi" placeholder="123456">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-top-filtrage" class="col-sm-6 control-label">
+                Top filtage 
+                <span class="badge hidden-xs hidden-sm" title="Top filtrage de la commande">?</span>
+              </label>
+              <div class="col-sm-6">
+                <select id="form-top-filtrage" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-num-demarrage" class="col-sm-6 control-label">
+                Numéro démarrage 
+                <span class="badge hidden-xs hidden-sm" title="Numéro de démarrage pour un abonnement">?</span>
+              </label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123456">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-date-demarrage" class="col-sm-6 control-label">
+                Date démarrage 
+                <span class="badge hidden-xs hidden-sm" title="Date de démarrage du contrat">?</span>
+              </label>
+              <div class="col-sm-6">
+                <input type="date" class="form-control" id="form-date-demarrage">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-montant-paiement" class="col-sm-6 control-label">Montant paiement</label>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="form-montant-paiement" placeholder="42,00">
+                  <div class="input-group-addon">&euro;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-type-2" class="col-sm-6 control-label">Type paiement</label>
+              <div class="col-sm-6">
+                <select id="form-type-2" class="form-control">
+                  <option>Carte Bancaire</option>
+                  <option>Virement</option>
+                  <option>Chèque</option>
+                  <option>Mandat</option>
+                  <option>Web</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="form-adresse-livraison" class="col-sm-3 control-label">
+            Adresse livraison 
+            <span class="badge hidden-xs hidden-sm" title="Adresse de livraison, si elle est différente de l'adresse de facturation">?</span>
+          </label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="form-adresse-livraison" placeholder="11 rue Paul Bert, 92240 Malakoff">
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+            <h3>Enfant</h3>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="form-prenom" class="col-sm-3 control-label">Prénom</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="form-prenom" placeholder="Michel">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-date-naissance" class="col-sm-6 control-label">Date naissance</label>
+              <div class="col-sm-6">
+                <input type="date" class="form-control" id="form-date-naissance">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-genre" class="col-sm-6 control-label">Genre</label>
+              <div class="col-sm-6">
+                <label class="radio-inline">
+                  <input type="radio" name="form-genre" id="form-genre" value="1" checked="">
+                  Garçon
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="form-genre" value="2">
+                  Fille
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-3 col-sm-9">
+            <a href="#/recherche-sans-resultat" class="btn btn-info">
+              <span class="glyphicon glyphicon-ok"></span>
+              Créer
+            </a>
+
+            <a href="#/recherche-sans-resultat" class="btn btn-default">
+              <span class="glyphicon glyphicon-remove"></span>
+              Annuler
+            </a>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

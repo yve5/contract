@@ -25,11 +25,23 @@ angular
       .when('/client', {
         templateUrl: 'views/client.html'
       })
+      .when('/nouveau-client', {
+        templateUrl: 'views/nouveau-client.html'
+      })
       .when('/contrat', {
         templateUrl: 'views/contrat.html'
       })
-      .when('/nouveau-client', {
-        templateUrl: 'views/nouveau-client.html'
+      .when('/nouveau-contrat', {
+        templateUrl: 'views/nouveau-contrat.html'
+      })
+      .when('/sepa', {
+        templateUrl: 'views/sepa.html'
+      })
+      .when('/direct-debit', {
+        templateUrl: 'views/direct-debit.html'
+      })
+      .when('/gestion-operation', {
+        templateUrl: 'views/gestion-operation.html'
       })
       .otherwise({
         redirectTo: '/'
