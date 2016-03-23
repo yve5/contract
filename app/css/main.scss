@@ -1,4 +1,4 @@
-@import 'compass';
+/*@import 'compass';*/
 
 body {
   font-family: 'Trebuchet MS', sans-serif;
@@ -15,7 +15,8 @@ body {
 
 div.container-header {
   background-color: #00bcd4;
-  @include background-image(linear-gradient(0deg, #00bcd4, #26c6da));
+  /*@include background-image(linear-gradient(0deg, #00bcd4, #26c6da));*/
+  background-image: linear-gradient(0deg, #00bcd4, #26c6da);
   padding-bottom: 20px;
   padding-top: 20px;
 
@@ -26,4 +27,34 @@ div.container-header {
 
 .panel-solde {
   background-color: #B2EBF2;
+}
+
+// Ongoing operation glyphicons
+table.operation-table {
+
+  span.glyphicon {
+    font-weight: bold;
+    font-size: 1.1em;
+
+    &.glyphicon-transfer {
+      color: #FF6F00;
+    }
+
+    &.glyphicon-credit-card {
+      color: #1976D2;
+    }
+
+    &.glyphicon-usd {
+      color: #43A047;
+    }
+
+    &.glyphicon-fire {
+      color: #F44336;
+    }
+
+    &.glyphicon-piggy-bank {
+      color: #F06292;
+    }
+  }
+
 }
