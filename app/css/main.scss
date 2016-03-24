@@ -1,4 +1,4 @@
-/*@import 'compass';*/
+// @import 'compass';
 
 body {
   font-family: 'Trebuchet MS', sans-serif;
@@ -9,16 +9,20 @@ body {
   margin-top: 5px;
 }
 
+.buffer-form-top {
+  margin-top: 50px;
+}
+
 .buffer-bottom {
   margin-bottom: 20px;
 }
 
 div.container-header {
   background-color: #00bcd4;
-  /*@include background-image(linear-gradient(0deg, #00bcd4, #26c6da));*/
+  // @include background-image(linear-gradient(0deg, #00bcd4, #26c6da));
   background-image: linear-gradient(0deg, #00bcd4, #26c6da);
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
 
   .app-logo {
     margin-top: -3px;
@@ -57,4 +61,21 @@ table.operation-table {
     }
   }
 
+}
+
+ol.breadcrumb {
+  background-color: #EEEEEE;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.input-th {
+  width: 50px;
+
+  input {
+    width: 50px;
+  }
 }

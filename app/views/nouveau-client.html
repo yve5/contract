@@ -2,7 +2,10 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <h1>Nouveau client</h1>
+      <ol class="breadcrumb buffer-top hidden-print">
+        <li><a href="#/recherche-sans-resultat">Recherche</a></li>
+        <li>Nouveau client</li>
+      </ol>
 
       <form class="form-horizontal">
         <div class="form-group">
@@ -26,10 +29,11 @@
           </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group has-success has-feedback">
           <label for="form-prenom" class="col-sm-3 control-label">Prénom</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="form-prenom" placeholder="Michel">
+            <input type="text" class="form-control" id="form-prenom" placeholder="Michel" value="Michel">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
           </div>
         </div>
 
@@ -74,10 +78,11 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="form-courriel" class="col-sm-3 control-label">Courriel</label>
+        <div class="form-group has-error has-feedback">
+          <label for="form-courriel" class="col-sm-3 control-label" title="Champ obligatoire">Courriel *</label>
           <div class="col-sm-9">
             <input type="email" class="form-control" id="form-courriel" placeholder="michel.dupont@gmail.com">
+            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
           </div>
         </div>
 
@@ -173,7 +178,7 @@
 
         <div class="form-group">
           <div class="col-sm-offset-3 col-sm-9">
-            <a href="#/recherche-sans-resultat" class="btn btn-info">
+            <a href="#/client" class="btn btn-info">
               <span class="glyphicon glyphicon-ok"></span>
               Créer
             </a>

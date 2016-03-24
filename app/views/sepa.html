@@ -2,8 +2,13 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <h1>Prélèvement SEPA</h1>
-
+      <ol class="breadcrumb buffer-top hidden-print">
+        <li><a href="#/recherche-sans-resultat">Recherche</a></li>
+        <li><a href="#/client">Client</a></li>
+        <li><a href="#/contrat">Contrat</a></li>
+        <li>Prélèvement SEPA</li>
+      </ol>
+      
       <form class="form-horizontal">
         <div class="form-group">
           <label for="form-nom" class="col-sm-3 control-label">
@@ -34,8 +39,14 @@
             Date signature 
             <span class="badge hidden-xs hidden-sm" title="Date de signature du mandat">?</span>
           </label>
-          <div class="col-sm-9">
-            <input type="date" class="form-control" id="form-date-signature">
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="29" id="form-date-signature">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="02">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="16">
           </div>
         </div>
         

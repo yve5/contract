@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <h1>Nouveau contrat</h1>
+      <ol class="breadcrumb buffer-top hidden-print">
+        <li><a href="#/recherche-sans-resultat">Recherche</a></li>
+        <li><a href="#/client">Client</a></li>
+        <li>Nouveau contrat</li>
+      </ol>
 
       <form class="form-horizontal">
         <div class="row">
@@ -10,7 +14,7 @@
             <div class="form-group">
               <label for="form-enseigne" class="col-sm-6 control-label">Enseigne</label>
               <div class="col-sm-6">
-                <select id="form-enseigne" class="form-control">
+                <select id="form-enseigne" class="form-control" autofocus="">
                   <option>Enseigne 1</option>
                   <option>Enseigne 2</option>
                   <option>Enseigne 3</option>
@@ -35,6 +39,103 @@
 
 
         <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-support" class="col-sm-6 control-label">Support</label>
+              <div class="col-sm-6">
+                <select id="form-support" class="form-control">
+                  <option>Support 1</option>
+                  <option>Support 2</option>
+                  <option>Support 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-beg" class="col-sm-6 control-label">
+                Top BEG <span class="badge hidden-xs hidden-sm" title="Top BEG (signé ou non signé)">?</span>
+              </label>
+              <div class="col-sm-6">
+                <select id="form-beg" class="form-control">
+                  <option>Non signé</option>
+                  <option>Signé</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-num-envoi" class="col-sm-6 control-label">Numéro envoi</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-num-envoi" placeholder="123456">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-top-filtrage" class="col-sm-6 control-label">
+                Top filtage 
+                <span class="badge hidden-xs hidden-sm" title="Top filtrage de la commande">?</span>
+              </label>
+              <div class="col-sm-6">
+                <select id="form-top-filtrage" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-num-demarrage" class="col-sm-6 control-label">
+                Numéro démarrage 
+                <span class="badge hidden-xs hidden-sm" title="Numéro de démarrage pour un abonnement">?</span>
+              </label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123456">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-echeance" class="col-sm-6 control-label">Nombre échéances</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-echeance" placeholder="6" disabled="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="form-date-demarrage" class="col-sm-3 control-label">
+            Date démarrage 
+            <span class="badge hidden-xs hidden-sm" title="Date de démarrage du contrat">?</span>
+          </label>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="29" id="form-date-demarrage">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="02">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="16">
+          </div>
+        </div>
+
+
+        <div class="row buffer-form-top">
           <div class="col-sm-6">
             <div class="form-group">
               <label for="form-montant-1" class="col-sm-6 control-label">
@@ -100,88 +201,7 @@
         </div>
 
 
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-echeance" class="col-sm-6 control-label">Nombre échéances</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-echeance" placeholder="6">
-              </div>
-            </div>
-          </div>
 
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-beg" class="col-sm-6 control-label">
-                Top BEG <span class="badge hidden-xs hidden-sm" title="Top BEG (signé ou non signé)">?</span>
-              </label>
-              <div class="col-sm-6">
-                <label class="radio-inline">
-                  <input type="radio" name="form-beg" id="form-beg" value="0" checked="">
-                  Oui
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="form-beg" value="1">
-                  Non
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-num-envoi" class="col-sm-6 control-label">Numéro envoi</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-num-envoi" placeholder="123456">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-top-filtrage" class="col-sm-6 control-label">
-                Top filtage 
-                <span class="badge hidden-xs hidden-sm" title="Top filtrage de la commande">?</span>
-              </label>
-              <div class="col-sm-6">
-                <select id="form-top-filtrage" class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-num-demarrage" class="col-sm-6 control-label">
-                Numéro démarrage 
-                <span class="badge hidden-xs hidden-sm" title="Numéro de démarrage pour un abonnement">?</span>
-              </label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123456">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-date-demarrage" class="col-sm-6 control-label">
-                Date démarrage 
-                <span class="badge hidden-xs hidden-sm" title="Date de démarrage du contrat">?</span>
-              </label>
-              <div class="col-sm-6">
-                <input type="date" class="form-control" id="form-date-demarrage">
-              </div>
-            </div>
-          </div>
-        </div>
 
 
         <div class="row">
@@ -197,7 +217,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6">
+          <!--<div class="col-sm-6">
             <div class="form-group">
               <label for="form-type-2" class="col-sm-6 control-label">Type paiement</label>
               <div class="col-sm-6">
@@ -210,7 +230,7 @@
                 </select>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
 
 
@@ -219,33 +239,23 @@
             Adresse livraison 
             <span class="badge hidden-xs hidden-sm" title="Adresse de livraison, si elle est différente de l'adresse de facturation">?</span>
           </label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="form-adresse-livraison" placeholder="11 rue Paul Bert, 92240 Malakoff">
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="form-adresse-livraison" placeholder="11 rue Paul Bert, 92240 Malakoff" disabled="">
+          </div>
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-info" title="Modifier l'adresse de livraison">
+              <span class="glyphicon glyphicon-pencil"></span>
+            </button>
           </div>
         </div>
 
 
-
-        <div class="form-group">
-          <div class="col-sm-9 col-sm-offset-3">
-            <h3>Enfant</h3>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="form-prenom" class="col-sm-3 control-label">Prénom</label>
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="form-prenom" placeholder="Michel">
-          </div>
-        </div>
-
-
-        <div class="row">
+        <div class="row buffer-form-top">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="form-date-naissance" class="col-sm-6 control-label">Date naissance</label>
+              <label for="form-date-naissance" class="col-sm-6 control-label">Prénom enfant</label>
               <div class="col-sm-6">
-                <input type="date" class="form-control" id="form-date-naissance">
+                <input type="text" class="form-control" id="form-prenom" placeholder="Michel">
               </div>
             </div>
           </div>
@@ -255,7 +265,7 @@
               <label for="form-genre" class="col-sm-6 control-label">Genre</label>
               <div class="col-sm-6">
                 <label class="radio-inline">
-                  <input type="radio" name="form-genre" id="form-genre" value="1" checked="">
+                  <input type="radio" name="form-genre" id="form-genre" value="1">
                   Garçon
                 </label>
                 <label class="radio-inline">
@@ -268,6 +278,19 @@
         </div>
 
         <div class="form-group">
+          <label for="form-date-naissance" class="col-sm-3 control-label">Date naissance</label>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="29" id="form-date-naissance">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="02">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" placeholder="16">
+          </div>
+        </div>
+
+        <div class="form-group hidden-print">
           <div class="col-sm-offset-3 col-sm-9">
             <a href="#/recherche-sans-resultat" class="btn btn-info">
               <span class="glyphicon glyphicon-ok"></span>
