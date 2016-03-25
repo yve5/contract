@@ -47,3 +47,6 @@ ol.breadcrumb {
   width: 50px; }
   .input-th input {
     width: 50px; }
+
+label.header-label {
+  margin: 0; }

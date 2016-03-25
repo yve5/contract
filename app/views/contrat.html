@@ -11,7 +11,6 @@
 
       <div class="panel panel-default">
         <div class="panel-body">
-
           <div class="row">
             <div class="col-sm-4">
               Mme Cécile Tourmeix
@@ -31,13 +30,11 @@
               France
             </div>
           </div>
-
         </div>
       </div>
 
       <div class="panel panel-info panel-solde">
         <div class="panel-body">
-
           <div class="row">
             <div class="col-sm-5">
               Contrat : 20236252 001
@@ -49,7 +46,7 @@
               <br />
               Dernier Envoi : 10/09/2015
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 hidden-print">
               <a href="#/contrat" class="btn btn-success btn-sm" title="Paiement">
                 <span class="glyphicon glyphicon-usd"></span>
               </a>
@@ -59,7 +56,6 @@
               </a>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -73,7 +69,10 @@
                 <th>Niv. Envoi</th>
                 <th>Montant</th>
                 <th>Solde</th>
-                <th>Paiement</th>
+                <th>
+                  <input type="checkbox" name="check-all-checkboxes" id="check-all-checkboxes" checked=""/>
+                  <label class="header-label" for="check-all-checkboxes">Paiement</label>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -112,7 +111,7 @@
         </div>
       </div>
 
-      <p class="text-center">
+      <p class="text-center hidden-print">
         <a href="#/client" class="btn btn-default btn-sm">
           <span class="glyphicon glyphicon-chevron-left"></span>
           Retour

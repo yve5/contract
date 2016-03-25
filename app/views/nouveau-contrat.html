@@ -202,8 +202,6 @@
 
 
 
-
-
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
@@ -242,14 +240,14 @@
           <div class="col-sm-7">
             <input type="text" class="form-control" id="form-adresse-livraison" placeholder="11 rue Paul Bert, 92240 Malakoff" disabled="">
           </div>
-          <div class="col-sm-2">
-            <button type="submit" class="btn btn-info" title="Modifier l'adresse de livraison">
+          <div class="col-sm-2 hidden-print">
+            <button type="submit" class="btn btn-info" title="Modifier l'adresse de livraison" data-toggle="modal" data-target="#edit-address-modal">
               <span class="glyphicon glyphicon-pencil"></span>
             </button>
           </div>
         </div>
 
-
+        
         <div class="row buffer-form-top">
           <div class="col-sm-6">
             <div class="form-group">
@@ -264,14 +262,11 @@
             <div class="form-group">
               <label for="form-genre" class="col-sm-6 control-label">Genre</label>
               <div class="col-sm-6">
-                <label class="radio-inline">
-                  <input type="radio" name="form-genre" id="form-genre" value="1">
-                  Garçon
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="form-genre" value="2">
-                  Fille
-                </label>
+                <select id="form-genre" class="form-control">
+                  <option>Inconnu</option>
+                  <option>Garçon</option>
+                  <option>Fille</option>
+                </select>
               </div>
             </div>
           </div>
@@ -305,6 +300,29 @@
         </div>
       </form>
 
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="edit-address-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Changement d'adresse de livraison</h4>
+      </div>
+      <div class="modal-body">
+        <textarea class="form-control" rows="5">11 rue Paul Bert, 92240 Malakoff</textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Annuler
+        </button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">
+          Sauvegarder
+        </button>
+      </div>
     </div>
   </div>
 </div>
