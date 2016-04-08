@@ -2,59 +2,162 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <ol class="breadcrumb buffer-top hidden-print">
+      <ol class="breadcrumb hidden-print">
         <li><a href="#/recherche-sans-resultat">Recherche</a></li>
         <li><a href="#/client">Client</a></li>
         <li>Contrat</li>
       </ol>
 
-
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="row">
+            
             <div class="col-sm-4">
-              Mme Cécile Tourmeix
-              <br />
-              ctourneix@hachette-livre.fr
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  Mme Cécile Tourmeix
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  ctourneix@hachette-livre.fr
+                </div>
+              </div>
             </div>
             <div class="col-sm-4">
-              tel1 : 01.49.92.37.37
-              <br />
-              tel2 : 01.49.92.38.11
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  tel1 : 01.49.92.37.37
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  tel2 : 01.49.92.38.11
+                </div>
+              </div>
             </div>
             <div class="col-sm-4">
-              58, rue Jean Bleuzen
-              <br />
-              92178 VANVES
-              <br />
-              France
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  58, rue Jean Bleuzen, 92178 VANVES, France
+                </div>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
 
-      <div class="panel panel-info panel-solde">
+      <div class="panel panel-info panel-contrat">
         <div class="panel-body">
           <div class="row">
-            <div class="col-sm-5">
-              Contrat : 20236252 001
-              <br />
-              Solde : -32,40 &euro;
+            
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 text-right">
+                  <strong>Contrat</strong>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                  20236252 001
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 text-right">
+                  <strong>Libellé</strong>
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                  Disney Club du Livre
+                </div>
+              </div>
             </div>
-            <div class="col-sm-5">
-              Libellé : Disney Club du Livre
-              <br />
-              Dernier Envoi : 10/09/2015
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-xs-6 text-right">
+                  <strong>Code Club</strong>
+                </div>
+                <div class="col-xs-6">
+                  12345
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6 text-right">
+                  <strong>Code Support</strong>
+                </div>
+                <div class="col-xs-6">
+                  12345
+                </div>
+              </div>
             </div>
-            <div class="col-sm-2 hidden-print">
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-xs-6 col-sm-7 text-right">
+                  <strong>Date Adhésion</strong>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                  10/09/2015
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6 col-sm-7 text-right">
+                  <strong>Dernier Envoi</strong>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                  10/09/2015
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="panel panel-warning panel-solde">
+        <div class="panel-body">
+          <div class="row">
+            
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-xs-6 text-right">
+                  <strong>Solde</strong>
+                </div>
+                <div class="col-xs-6">
+                  -32,40 &euro;
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-xs-6 text-right">
+                  <strong>Total à payer</strong>
+                </div>
+                <div class="col-xs-6">
+                  25,8 &euro;
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 hidden-print text-center">
               <a href="#/contrat" class="btn btn-success btn-sm" title="Paiement">
                 <span class="glyphicon glyphicon-usd"></span>
+                <span class="hidden-sm">Paiement</span>
+              </a>
+
+              <a href="#/contrat" class="btn btn-primary btn-sm" title="Prélèvement Carte Bancaire">
+                <span class="glyphicon glyphicon-credit-card"></span>
+                <span class="hidden-sm">CB</span>
               </a>
               
-              <a href="#/contrat" class="btn btn-warning btn-sm" title="Prélèvement">
+              <a href="#/contrat" class="btn btn-warning btn-sm" title="Prélèvement SEPA">
                 <span class="glyphicon glyphicon-credit-card"></span>
+                <span class="hidden-sm">SEPA</span>
               </a>
             </div>
+
           </div>
         </div>
       </div>
@@ -83,7 +186,7 @@
                 <td>12,90 &euro;</td>
                 <td>-12,90 &euro;</td>
                 <td>
-                  <input type="checkbox" name="check-facture-1" checked=""/>
+                  <input type="checkbox" name="check-facture-1"/>
                 </td>
               </tr>
               <tr>

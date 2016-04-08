@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <ol class="breadcrumb buffer-top hidden-print">
+      <ol class="breadcrumb hidden-print">
         <li><a href="#/recherche-sans-resultat">Recherche</a></li>
         <li><a href="#/client">Client</a></li>
         <li>Nouveau contrat</li>
@@ -70,9 +70,12 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="form-num-envoi" class="col-sm-6 control-label">Numéro envoi</label>
+              <label for="form-num-demarrage" class="col-sm-6 control-label">
+                Numéro démarrage 
+                <span class="badge hidden-xs hidden-sm" title="Numéro de démarrage pour un abonnement">?</span>
+              </label>
               <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-num-envoi" placeholder="123456">
+                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123456">
               </div>
             </div>
           </div>
@@ -94,42 +97,32 @@
           </div>
         </div>
 
-
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-num-demarrage" class="col-sm-6 control-label">
-                Numéro démarrage 
-                <span class="badge hidden-xs hidden-sm" title="Numéro de démarrage pour un abonnement">?</span>
-              </label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123456">
-              </div>
-            </div>
+        
+        <div class="form-group">
+          <label for="form-dossier" class="col-sm-3 control-label">Numéro dossier</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="form-dossier" placeholder="456789" disabled="">
           </div>
-
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-echeance" class="col-sm-6 control-label">Nombre échéances</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-echeance" placeholder="6" disabled="">
-              </div>
-            </div>
+          <div class="col-sm-2 hidden-print">
+            <button type="submit" class="btn btn-info" title="Modifier le numéro de dossier" data-toggle="modal" data-target="#edit-folder-modal">
+              <span class="glyphicon glyphicon-pencil"></span>
+            </button>
           </div>
         </div>
-
-        <div class="form-group">
+        
+        
+        <div class="form-group form-group-no-margin">
           <label for="form-date-demarrage" class="col-sm-3 control-label">
             Date démarrage 
             <span class="badge hidden-xs hidden-sm" title="Date de démarrage du contrat">?</span>
           </label>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" placeholder="29" id="form-date-demarrage">
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" placeholder="02">
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" placeholder="16">
           </div>
         </div>
@@ -214,21 +207,6 @@
               </div>
             </div>
           </div>
-
-          <!--<div class="col-sm-6">
-            <div class="form-group">
-              <label for="form-type-2" class="col-sm-6 control-label">Type paiement</label>
-              <div class="col-sm-6">
-                <select id="form-type-2" class="form-control">
-                  <option>Carte Bancaire</option>
-                  <option>Virement</option>
-                  <option>Chèque</option>
-                  <option>Mandat</option>
-                  <option>Web</option>
-                </select>
-              </div>
-            </div>
-          </div>-->
         </div>
 
 
@@ -237,7 +215,7 @@
             Adresse livraison 
             <span class="badge hidden-xs hidden-sm" title="Adresse de livraison, si elle est différente de l'adresse de facturation">?</span>
           </label>
-          <div class="col-sm-7">
+          <div class="col-sm-6">
             <input type="text" class="form-control" id="form-adresse-livraison" placeholder="11 rue Paul Bert, 92240 Malakoff" disabled="">
           </div>
           <div class="col-sm-2 hidden-print">
@@ -246,18 +224,20 @@
             </button>
           </div>
         </div>
-
         
-        <div class="row buffer-form-top">
+        <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="form-date-naissance" class="col-sm-6 control-label">Prénom enfant</label>
+              <label for="form-echeance" class="col-sm-6 control-label">Nombre échéances</label>
               <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-prenom" placeholder="Michel">
+                <input type="text" class="form-control" id="form-echeance" placeholder="6" disabled="">
               </div>
             </div>
           </div>
+        </div>
 
+        
+        <div class="row buffer-form-top">
           <div class="col-sm-6">
             <div class="form-group">
               <label for="form-genre" class="col-sm-6 control-label">Genre</label>
@@ -270,17 +250,26 @@
               </div>
             </div>
           </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-date-naissance" class="col-sm-6 control-label">Prénom enfant</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="form-prenom" placeholder="Michel">
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="form-group">
           <label for="form-date-naissance" class="col-sm-3 control-label">Date naissance</label>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" placeholder="29" id="form-date-naissance">
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" placeholder="02">
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" placeholder="16">
           </div>
         </div>
@@ -305,12 +294,34 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="edit-address-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="edit-folder-modal" tabindex="-1" role="dialog" aria-labelledby="edit-folder-label">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Changement d'adresse de livraison</h4>
+        <h4 class="modal-title" id="edit-folder-label">Modification du numéro de dossier</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" value="456789" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Annuler
+        </button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">
+          Sauvegarder
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="edit-address-modal" tabindex="-1" role="dialog" aria-labelledby="edit-address-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="edit-address-label">Modification de l'adresse de livraison</h4>
       </div>
       <div class="modal-body">
         <textarea class="form-control" rows="5">11 rue Paul Bert, 92240 Malakoff</textarea>

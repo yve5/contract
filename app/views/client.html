@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <ol class="breadcrumb buffer-top hidden-print">
+      <ol class="breadcrumb hidden-print">
         <li><a href="#/recherche-sans-resultat">Recherche</a></li>
         <li>Client</li>
       </ol>
@@ -12,21 +12,37 @@
 
           <div class="row">
             <div class="col-sm-4">
-              Mme Cécile Tourmeix
-              <br />
-              ctourneix@hachette-livre.fr
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  Mme Cécile Tourmeix
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  ctourneix@hachette-livre.fr
+                </div>
+              </div>
             </div>
             <div class="col-sm-4">
-              tel1 : 01.49.92.37.37
-              <br />
-              tel2 : 01.49.92.38.11
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  tel1 : 01.49.92.37.37
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  tel2 : 01.49.92.38.11
+                </div>
+              </div>
             </div>
             <div class="col-sm-4">
-              58, rue Jean Bleuzen
-              <br />
-              92178 VANVES
-              <br />
-              France
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  58, rue Jean Bleuzen, 92178 VANVES, France
+                </div>
+              </div>
             </div>
           </div>
 
@@ -106,7 +122,7 @@
                 </td>
                 <td class="hidden-print"></td>
                 <td class="hidden-print">
-                  <a href="#/client" class="btn btn-default btn-xs" title="Supprimer">
+                  <a href="#/client" class="btn btn-danger btn-xs" title="Supprimer" data-toggle="modal" data-target="#delete-contract-modal">
                     <span class="glyphicon glyphicon-remove"></span>
                   </a>
                 </td>
@@ -151,6 +167,29 @@
         </a>
       </p>
 
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="delete-contract-modal" tabindex="-1" role="dialog" aria-labelledby="delete-contract-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="delete-contract-label">Demande de suppression</h4>
+      </div>
+      <div class="modal-body">
+        Êtes-vous certain de supprimer ce contrat ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Annuler
+        </button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">
+          Supprimer
+        </button>
+      </div>
     </div>
   </div>
 </div>
