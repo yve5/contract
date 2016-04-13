@@ -9,36 +9,6 @@ body {
   color: black;
 }
 
-div.underlay {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  left: 0;
-  top: 0;
-
-  background:
-    repeating-linear-gradient(
-    50deg,
-    #fafafa,
-    #fafafa 4em,
-    #f5f5f5 4em,
-    #f5f5f5 8em,
-    #eeeeee 8em,
-    #eeeeee 12em
-    ),
-    repeating-linear-gradient(
-    -50deg,
-    #fafafa,
-    #fafafa 4em,
-    #f5f5f5 4em,
-    #f5f5f5 8em,
-    #eeeeee 8em,
-    #eeeeee 12em
-    );
-  background-blend-mode: multiply;
-}
-
 .buffer-top {
   margin-top: 5px;
 }

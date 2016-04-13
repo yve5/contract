@@ -11,7 +11,7 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="row">
-            
+
             <div class="col-sm-4">
               <div class="row">
                 <div class="col-xs-12 text-center">
@@ -49,7 +49,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
       <div class="panel panel-info panel-contrat">
         <div class="panel-body">
           <div class="row">
-            
+
             <div class="col-sm-4">
               <div class="row">
                 <div class="col-xs-6 col-sm-4 text-right">
@@ -67,7 +67,7 @@
                   20236252 001
                 </div>
               </div>
-              
+
               <div class="row">
                 <div class="col-xs-6 col-sm-4 text-right">
                   <strong>Libellé</strong>
@@ -119,11 +119,11 @@
           </div>
         </div>
       </div>
-      
+
       <div class="panel panel-warning panel-solde">
         <div class="panel-body">
           <div class="row">
-            
+
             <div class="col-sm-4">
               <div class="row">
                 <div class="col-xs-6 text-right">
@@ -155,13 +155,27 @@
                 <span class="glyphicon glyphicon-credit-card"></span>
                 <span class="hidden-sm">CB</span>
               </a>
-              
+
               <a href="#/contrat" class="btn btn-warning btn-sm" title="Prélèvement SEPA">
-                <span class="glyphicon glyphicon-credit-card"></span>
+                <span class="glyphicon glyphicon-piggy-bank"></span>
                 <span class="hidden-sm">SEPA</span>
               </a>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="alert alert-danger alert-dismissible fade in" role="alert">
+        <div class="row">
+          <div class="col-sm-8">
+            <h4>Installation d’un prélèvement en cours...</h4>
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-danger btn-sm pull-right" data-toggle="modal" data-target="#cancel-sample-modal">
+              Interrompre
+            </button>
           </div>
         </div>
       </div>
@@ -225,6 +239,29 @@
         </a>
       </p>
 
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="cancel-sample-modal" tabindex="-1" role="dialog" aria-labelledby="cancel-sample-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="cancel-sample-label">Demande d'annulation</h4>
+      </div>
+      <div class="modal-body">
+        Êtes-vous certain d'interrompre l'installation du prélèvement en cours ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Annuler
+        </button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">
+          Interrompre
+        </button>
+      </div>
     </div>
   </div>
 </div>

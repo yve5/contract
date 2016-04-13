@@ -74,8 +74,8 @@
                 Numéro démarrage 
                 <span class="badge hidden-xs hidden-sm" title="Numéro de démarrage pour un abonnement">?</span>
               </label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123456">
+              <div class="col-sm-3 col-md-2">
+                <input type="text" class="form-control" id="form-num-demarrage" placeholder="123">
               </div>
             </div>
           </div>
@@ -275,16 +275,27 @@
         </div>
 
         <div class="form-group hidden-print">
-          <div class="col-sm-offset-3 col-sm-9">
-            <a href="#/recherche-sans-resultat" class="btn btn-info">
-              <span class="glyphicon glyphicon-ok"></span>
-              Créer
-            </a>
+          <div class="col-sm-9 col-sm-push-3">
+            <p>
+              <a href="#/contrat" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span>
+                Créer
+              </a>
 
-            <a href="#/recherche-sans-resultat" class="btn btn-default">
-              <span class="glyphicon glyphicon-remove"></span>
-              Annuler
-            </a>
+              <a href="#/nouveau-contrat" class="btn btn-info">
+                <span class="glyphicon glyphicon-refresh"></span>
+                Réinitialiser
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-3 col-sm-pull-9">
+            <p>
+              <a href="#/client" class="btn btn-default">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                Retour
+              </a>
+            </p>
           </div>
         </div>
       </form>

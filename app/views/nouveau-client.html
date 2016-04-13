@@ -78,6 +78,19 @@
           </div>
         </div>
 
+        <div class="form-group">
+          <label for="form-pays" class="col-sm-3 control-label">Pays</label>
+          <div class="col-sm-3">
+            <select class="form-control" id="form-pays" tabindex="9">
+              <option>Pays 1</option>
+              <option>Pays 2</option>
+              <option>Pays 3</option>
+              <option>Pays 4</option>
+              <option>Pays 5</option>
+            </select>
+          </div>
+        </div>
+
         <div class="form-group has-error has-feedback">
           <label for="form-courriel" class="col-sm-3 control-label" title="Champ obligatoire">Courriel *</label>
           <div class="col-sm-9">
@@ -111,12 +124,16 @@
             <div class="form-group">
               <label for="form-courriel-externe" class="col-sm-6 control-label">Courriel externe</label>
               <div class="col-sm-6">
+                <label class="radio-inline" title="Non Déterminé">
+                  <input type="radio" name="form-courriel-externe" id="form-courriel-externe" value="0" checked="">
+                  ND
+                </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-courriel-externe" id="form-courriel-externe" value="1" checked="">
+                  <input type="radio" name="form-courriel-externe" value="1">
                   Oui
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-courriel-externe" value="0">
+                  <input type="radio" name="form-courriel-externe" value="2">
                   Non
                 </label>
               </div>
@@ -127,12 +144,16 @@
             <div class="form-group">
               <label for="form-courriel-hachette" class="col-sm-6 control-label">Courriel Hachette</label>
               <div class="col-sm-6">
+                <label class="radio-inline" title="Non Déterminé">
+                  <input type="radio" name="form-courriel-hachette" id="form-courriel-hachette" value="0" checked="">
+                  ND
+                </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-courriel-hachette" id="form-courriel-hachette" value="1" checked="">
+                  <input type="radio" name="form-courriel-hachette" value="1">
                   Oui
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-courriel-hachette" value="0">
+                  <input type="radio" name="form-courriel-hachette" value="2">
                   Non
                 </label>
               </div>
@@ -144,14 +165,17 @@
           <div class="col-sm-6">
             <div class="form-group">
               <label for="form-stop-location" class="col-sm-6 control-label">Stop Location</label>
-
               <div class="col-sm-6">
+                <label class="radio-inline" title="Non Déterminé">
+                  <input type="radio" name="form-stop-location" id="form-stop-location" value="0" checked="">
+                  ND
+                </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-stop-location" id="form-stop-location" value="1" checked="">
+                  <input type="radio" name="form-stop-location" value="1">
                   Oui
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-stop-location" value="0">
+                  <input type="radio" name="form-stop-location" value="2">
                   Non
                 </label>
               </div>
@@ -161,14 +185,36 @@
           <div class="col-sm-6">
             <div class="form-group">
               <label for="form-stop-telephone" class="col-sm-6 control-label">Stop Téléphone</label>
-
               <div class="col-sm-6">
+                <label class="radio-inline" title="Non Déterminé">
+                  <input type="radio" name="form-stop-telephone" id="form-stop-telephone" value="0" checked="">
+                  ND
+                </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-stop-telephone" id="form-stop-telephone" value="1" checked="">
+                  <input type="radio" name="form-stop-telephone" value="1">
                   Oui
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="form-stop-telephone" value="0">
+                  <input type="radio" name="form-stop-telephone" value="2">
+                  Non
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="form-forcage-adresse" class="col-sm-6 control-label">Forçage adresse</label>
+              <div class="col-sm-6">
+                <label class="radio-inline">
+                  <input type="radio" name="form-forcage-adresse" value="1">
+                  Oui
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="form-forcage-adresse" id="form-forcage-adresse" value="2" checked="">
                   Non
                 </label>
               </div>
@@ -176,17 +222,29 @@
           </div>
         </div>
 
-        <div class="form-group hidden-print">
-          <div class="col-sm-offset-3 col-sm-9">
-            <a href="#/client" class="btn btn-info">
-              <span class="glyphicon glyphicon-ok"></span>
-              Créer
-            </a>
 
-            <a href="#/recherche-sans-resultat" class="btn btn-default">
-              <span class="glyphicon glyphicon-remove"></span>
-              Annuler
-            </a>
+        <div class="form-group hidden-print">
+          <div class="col-sm-9 col-sm-push-3">
+            <p>
+              <a href="#/client" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span>
+                Créer
+              </a>
+
+              <a href="#/nouveau-client" class="btn btn-info">
+                <span class="glyphicon glyphicon-refresh"></span>
+                Réinitialiser
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-3 col-sm-pull-9">
+            <p>
+              <a href="#/client" class="btn btn-default">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                Retour
+              </a>
+            </p>
           </div>
         </div>
       </form>

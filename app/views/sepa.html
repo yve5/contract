@@ -8,7 +8,7 @@
         <li><a href="#/contrat">Contrat</a></li>
         <li>Prélèvement SEPA</li>
       </ol>
-      
+
       <form class="form-horizontal">
         <div class="form-group">
           <label for="form-nom" class="col-sm-3 control-label">
@@ -22,16 +22,16 @@
 
         <div class="form-group">
           <label for="form-code-bic" class="col-sm-3 control-label">Code BIC</label>
-          <div class="col-sm-6">
+          <div class="col-sm-2">
             <input type="text" class="form-control" id="form-code-bic" placeholder="AGRIFRPP">
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2 col-md-1">
             <input type="text" class="form-control" id="form-code-bic-2" placeholder="882">
           </div>
         </div>
 
-        
-        
+
+
         <div class="form-group form-group-sepa">
           <label for="form-num-iban" class="col-sm-3 control-label">Numéro IBAN</label>
           <div class="col-sm-1">
@@ -75,18 +75,29 @@
             <input type="text" class="form-control" placeholder="16">
           </div>
         </div>
-        
-        <div class="form-group hidden-print">
-          <div class="col-sm-offset-3 col-sm-9">
-            <a href="#/" class="btn btn-info">
-              <span class="glyphicon glyphicon-ok"></span>
-              Soumettre
-            </a>
 
-            <a href="#/" class="btn btn-default">
-              <span class="glyphicon glyphicon-remove"></span>
-              Annuler
-            </a>
+        <div class="form-group hidden-print">
+          <div class="col-sm-9 col-sm-push-3">
+            <p>
+              <a href="#/sepa" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span>
+                Soumettre
+              </a>
+
+              <a href="#/sepa" class="btn btn-info">
+                <span class="glyphicon glyphicon-refresh"></span>
+                Réinitialiser
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-3 col-sm-pull-9">
+            <p>
+              <a href="#/contrat" class="btn btn-default">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                Retour
+              </a>
+            </p>
           </div>
         </div>
       </form>
