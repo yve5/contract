@@ -11,7 +11,9 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(['$routeProvider', function ($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('');
+    
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html'
